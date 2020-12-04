@@ -23,9 +23,9 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-eat-eggs-get-lean",
+    "start": "egg-scripts start --port=${LEANCLOUD_APP_PORT:-3000} --workers=1 --title=egg-server-eat-eggs-get-lean",
     "stop": "egg-scripts stop --title=egg-server-eat-eggs-get-lean",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --port=3000",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
