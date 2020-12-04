@@ -1,33 +1,27 @@
-# eat-eggs-get-lean
+# Eat Eggs, Get Lean
 
 A demo showing how to deploy egg.js projects on LeanEngine.
 
 ## QuickStart
 
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+```sh
+git clone https://github.com/weakish/eat-eggs-get-lean.git
+cd eat-eggs-get-lean
+lean switch  # link to your LeanCloud application
+lean deploy
 ```
 
-### Deploy
+see [egg docs][egg] and [lean-cli docs][lean-cli] for more details.
 
-```bash
-$ npm start
-$ npm stop
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
+[lean-cli]: https://docs.leancloud.app/leanengine_cli.html
 [egg]: https://eggjs.org
+
+## Disclaimer
+
+LeanEngine runtime uses single CPU core, thus egg.js is not recommended.
+If you are developing a new project for LeanEngine, have a look at [express] or [koa].
+
+[express]: https://github.com/leancloud/node-js-getting-started
+[koa]: https://github.com/leancloud/koa-getting-started
+
+And "Eat eggs, get lean" is not intended nor implied to be a substitute for professional medical advice.
